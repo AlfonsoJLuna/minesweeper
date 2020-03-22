@@ -46,7 +46,7 @@ void initializeSDL() {
 	if (SDL_Init(SDL_INIT_VIDEO) < 0) {
 		printf("%s\n", SDL_GetError());
 	} else {
-		window = SDL_CreateWindow("minesweeper v1", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+		window = SDL_CreateWindow("minesweeper", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 
 		if (window == NULL) {
 			printf("%s\n", SDL_GetError());
